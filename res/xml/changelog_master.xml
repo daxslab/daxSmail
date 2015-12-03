@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="changelog_style.xsl"?>
+<!--
+     The master change log is kept in res/xml/changelog_master.xml.
+     Locale specific versions are kept in res/xml-<locale qualifier>/changelog.xml.
+
+     Don't edit the changelog_<name>_branch.xml files in the gh-pages branch.
+     They are automatically updated with "ant bump-version".
+-->
+
+<changelog>
+    <release version="0.5" versioncode="00012" >
+        <change>included DaxsLab logo and info to welcome view</change>
+        <change>Fixed about dialog</change>
+        <change>Added DaxsLab logo</change>
+        <change>Added ImageGetter to htmlToSpanned and htmlToText functions of HtmlConverter class</change>
+        <change>Added Spanish language to ckChangeLog plugin</change>
+    </release>
+    <release version="0.4" versioncode="00004" >
+        <change>Added optimized Nauta POP3 account configuration</change>
+    </release>
+    <release version="0.3" versioncode="00003" >
+        <change>Added optimized Nauta IMAP account configuration</change>
+    </release>
+    <release version="0.2" versioncode="00002" >
+        <change>Added new icon</change>
+        <change>Changed strings values</change>
+        <change>Changelog rebuilded</change>
+    </release>
+    <release version="0.1" versioncode="00001" >
+        <change>Forked K-9 Mail version 5.006 (22006)</change>
+        <change>Removed unsupported locales</change>
+        <change>Name and package name changed</change>
+    </release>
+</changelog>

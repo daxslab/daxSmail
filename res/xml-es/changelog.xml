@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="changelog_style.xsl"?>
+<!--
+     The master change log is kept in res/xml/changelog_master.xml.
+     Locale specific versions are kept in res/xml-<locale qualifier>/changelog.xml.
+
+     Don't edit the changelog_<name>_branch.xml files in the gh-pages branch.
+     They are automatically updated with "ant bump-version".
+-->
+
+<changelog>
+    <release version="0.5" versioncode="00012" >
+        <change>Agregado logo e información de DaxsLab a la vista de bienvenida</change>
+        <change>Arreglado dialogo Acerca de</change>
+        <change>Agregado logo de DaxsLab</change>
+        <change>Agregado ImageGetter a las funciones htmlToSpanned y htmlToText de la clase HtmlConverter</change>
+        <change>Agregado idioma español al plugin ckChangeLog</change>
+    </release>
+    <release version="0.4" versioncode="00004" >
+        <change>Agregada nueva opción de configuración de cuenta optimizada para Nauta (POP3)</change>
+    </release>
+    <release version="0.3" versioncode="00003" >
+        <change>Agregada nueva opción de configuración de cuenta optimizada para Nauta (IMAP)</change>
+    </release>
+    <release version="0.2" versioncode="00002" >
+        <change>Añadido nuevo icono</change>
+        <change>Cambiados valores de cadenas</change>
+        <change>Changelog reconstruido</change>
+    </release>
+    <release version="0.1" versioncode="00001" >
+        <change>Realizado Fork de K-9 Mail en su versión 5.006 (22006)</change>
+        <change>Eliminados ficheros de idiomas no soportados</change>
+        <change>Cambiados nombre de la aplicación y del paquete</change>
+    </release>
+</changelog>

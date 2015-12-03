@@ -1,0 +1,64 @@
+buildscript {
+  repositories {
+    mavenCentral()
+    //jcenter()
+  }
+
+  dependencies {
+    //classpath 'com.android.tools.build:gradle:0.12.2'
+    classpath 'com.android.tools.build:gradle:1.3.0'
+  }
+}
+
+apply plugin: 'com.android.application'
+
+dependencies {
+  compile project(':plugins:Android-PullToRefresh:library')
+  compile project(':plugins:ckChangeLog:library')
+  compile project(':plugins:HoloColorPicker')
+  compile project(':plugins:openpgp-api-library')
+  compile 'com.android.support:support-v13:19.1.0'
+  compile fileTree(dir: 'libs', include: '*.jar')
+}
+
+android {
+  compileSdkVersion 19
+  buildToolsVersion '20.0.0'
+  sourceSets {
+    main {
+      manifest.srcFile 'AndroidManifest.xml'
+      java.srcDirs = ['src']
+      res.srcDirs = ['res']
+      assets.srcDirs = ['assets']
+    }
+
+    androidTest {
+      manifest.srcFile 'tests/AndroidManifest.xml'
+      java.srcDirs = ['tests/src']
+      assets.srcDirs = ['tests/assets']
+    }
+  }
+  // Do not abort build if lint finds errors
+  lintOptions {
+    abortOnError false
+  }
+  packagingOptions {
+    exclude 'META-INF/DEPENDENCIES'
+    exclude 'META-INF/LICENSE'
+    exclude 'META-INF/NOTICE'
+  }
+  defaultConfig {
+    applicationId 'com.daxslab.mail'
+    versionCode 12
+    versionName '0.5'
+    minSdkVersion 15
+    targetSdkVersion 17
+  }
+  productFlavors {
+  }
+}
+
+task testsOnJVM(type :GradleBuild, dependsOn: assemble) {
+  buildFile = 'tests-on-jvm/build.gradle'
+  tasks = ['test']
+}

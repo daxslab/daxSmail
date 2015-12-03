@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/plugins/Android-PullToRefresh/Android-PullToRefresh.iml" filepath="$PROJECT_DIR$/plugins/Android-PullToRefresh/Android-PullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/HoloColorPicker/HoloColorPicker.iml" filepath="$PROJECT_DIR$/plugins/HoloColorPicker/HoloColorPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/ckChangeLog/ckChangeLog.iml" filepath="$PROJECT_DIR$/plugins/ckChangeLog/ckChangeLog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/ckChangeLog/library/ckChangeLog-library.iml" filepath="$PROJECT_DIR$/plugins/ckChangeLog/library/ckChangeLog-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daxsMail.iml" filepath="$PROJECT_DIR$/daxsMail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/Android-PullToRefresh/library/library.iml" filepath="$PROJECT_DIR$/plugins/Android-PullToRefresh/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/openpgp-api-library/openpgp-api-library.iml" filepath="$PROJECT_DIR$/plugins/openpgp-api-library/openpgp-api-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/plugins/plugins.iml" filepath="$PROJECT_DIR$/plugins/plugins.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,4 @@
+include ':plugins:Android-PullToRefresh:library'
+include ':plugins:ckChangeLog:library'
+include ':plugins:HoloColorPicker'
+include ':plugins:openpgp-api-library'
