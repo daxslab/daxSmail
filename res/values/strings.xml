@@ -61,7 +61,7 @@ Please submit bug reports, contribute new features and ask questions at
 
 
     <!-- Default signature -->
-    <string name="default_signature">-- \nSent from my Android device with Daxs Mail. Please excuse my brevity.</string>
+    <string name="default_signature">-- \nSent from my Android device with Daxs Mail.</string>
 
 
     <!-- General strings that include the app name -->
@@ -372,6 +372,8 @@ Please submit bug reports, contribute new features and ask questions at
 
     <string name="account_setup_account_type_title">Account type</string>
     <string name="account_setup_account_type_instructions">What kind of account is this?</string>
+    <string name="account_setup_account_type_nauta_imap_action">Nauta IMAP (recommended)</string>
+    <string name="account_setup_account_type_nauta_pop3_action">Nauta POP3</string>
     <string name="account_setup_account_type_pop_action">POP3</string>
     <string name="account_setup_account_type_imap_action">IMAP</string>
     <string name="account_setup_account_type_webdav_action">Exchange (WebDAV)</string>
@@ -1135,6 +1137,5 @@ Please submit bug reports, contribute new features and ask questions at
     <string name="client_certificate_retrieval_failure">"Failed to retrieve client certificate for alias \"<xliff:g id="alias">%s</xliff:g>\""</string>
     <string name="client_certificate_advanced_options">Advanced options</string>
     <string name="client_certificate_expired">"Client certificate \"<xliff:g id="certificate_alias">%1$s</xliff:g>\" has expired or is not yet valid (<xliff:g id="exception_message">%2$s</xliff:g>)"</string>
-    <string name="account_setup_account_type_nauta_imap_action">Nauta IMAP</string>
-    <string name="account_setup_account_type_nauta_pop3_action">Nauta POP3</string>
+
 </resources>
