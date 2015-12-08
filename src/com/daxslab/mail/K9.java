@@ -178,7 +178,7 @@ public class K9 extends Application {
      *
      * Feature is enabled when DEBUG == true
      */
-    public static String ERROR_FOLDER_NAME = "K9mail-errors";
+    public static String ERROR_FOLDER_NAME = "daxSmail-errors";
 
     /**
      * A reference to the {@link SharedPreferences} used for caching the last known database
