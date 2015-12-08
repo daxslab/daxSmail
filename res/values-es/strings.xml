@@ -2,6 +2,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!--=== App-specific strings =============================================================-->
   <!--This should make it easier for forks to change the branding-->
+
   <!--Used in AndroidManifest.xml-->
   <string name="app_name">Daxs Mail</string>
   <string name="beta_app_name">Daxs Mail BETA</string>
@@ -9,10 +10,12 @@
   <string name="unread_widget_label">Mensaje Daxs Mail no leído</string>
   <string name="remote_control_label">Control remoto Daxs Mail</string>
   <string name="remote_control_desc">Permite a esta aplicación controlar las actividades y configuración de Daxs Mail</string>
+
   <!--Used in the about dialog-->
   <string name="app_authors">DaxsLab.</string>
   <string name="app_copyright_fmt">Copyright 2015-<xliff:g>%s</xliff:g> DaxsLab. Un proyecto para la Comunidad Cubana de Android.</string>
   <string name="app_license">Licenciado con Licencia Apache, Versión 2.0.</string>
+
   <!--Welcome message-->
   <string name="welcome_message_title">Bienvenido a Daxs Mail</string>
   <string name="accounts_welcome"><![CDATA[
@@ -49,15 +52,20 @@ Por favor, envía los errores detectados, contribuye con nuevas funcionalidades 
 <a href=\"http://www.daxslab.com\">http://www.daxslab.com</a>
 </p>
     ]]></string>
+
   <!--Default signature-->
+  <string name="default_signature">-- \nEnviado desde mi android con Daxs Mail.</string>
+
   <!--General strings that include the app name-->
   <string name="account_delete_dlg_instructions_fmt">La cuenta \"<xliff:g id="account">%s</xliff:g>\" será eliminada de Daxs Mail.</string>
   <string name="account_recreate_dlg_instructions_fmt">Los datos de \"<xliff:g id="account">%s</xliff:g>\" serán eliminados de Daxs Mail, pero se mantendrá su configuración.</string>
   <string name="account_clear_dlg_instructions_fmt">Todos los mensajes en \"<xliff:g id="account">%s</xliff:g>\" serán eliminados de Daxs Mail, pero la configuración de la cuenta se mantendrá.</string>
   <string name="insufficient_apg_permissions">Daxs Mail no tiene permiso para acceder totalmente a APG, por favor, instale Daxs Mail otra vez para arreglarlo.</string>
+
   <!--=== App Store-specific strings =======================================================-->
   <string name="import_dialog_error_message">Por favor instale un gestor de archivos para continuar con esta importación.</string>
   <string name="open_market">Abrir Google Play</string>
+
   <!--=== General strings ==================================================================-->
   <string name="app_authors_fmt">Autores: <xliff:g id="app_authors">%s</xliff:g></string>
   <string name="app_revision_fmt">Información de la revisión: <xliff:g id="app_revision_url">%s</xliff:g></string>
@@ -89,6 +97,7 @@ Por favor, envía los errores detectados, contribuye con nuevas funcionalidades 
   <string name="actionbar_selected"><xliff:g id="selection_count">%d</xliff:g> seleccionados</string>
   <string name="next_action">Siguiente</string>
   <string name="previous_action">Anterior</string>
+
   <!--Used to confirm acceptance of dialog boxes, warnings, errors, etc.-->
   <string name="okay_action">Aceptar</string>
   <string name="cancel_action">Cancelar</string>
@@ -147,6 +156,7 @@ Por favor, envía los errores detectados, contribuye con nuevas funcionalidades 
   <string name="about_action">Acerca de</string>
   <string name="prefs_title">Configuración</string>
   <string name="accounts_context_menu_title">Configuración de cuenta</string>
+
   <!--Shown in place of the subject when a message has no subject. Showing this in parentheses is customary.-->
   <string name="general_no_subject">(Sin Asunto)</string>
   <string name="general_no_sender">Sin Remitente</string>
@@ -236,6 +246,7 @@ Por favor, envía los errores detectados, contribuye con nuevas funcionalidades 
   <string name="message_view_no_viewer">Imposible encontrar visor de <xliff:g id="mimetype">%s</xliff:g>.</string>
   <string name="message_view_download_remainder">Descargar mensaje completo</string>
   <string name="message_view_downloading">Descargando…</string>
+
   <!--NOTE: The following message refers to strings with id account_setup_incoming_save_all_headers_label and account_setup_incoming_title-->
   <string name="message_additional_headers_not_downloaded">No se han descargado o grabado todas las cabeceras. Seleccione \"Guardar todas las cabeceras localmente\" en la Configuración de cuenta para permitir esta acción en el futuro.</string>
   <string name="message_no_additional_headers_available">Se han descargado todas las cabeceras,  pero no hay cabeceras adicionales que mostrar.</string>
@@ -301,6 +312,8 @@ Por favor, envía los errores detectados, contribuye con nuevas funcionalidades 
   <string name="account_setup_names_user_name_label">Introduzca su nombre (se verá en los mensajes salientes):</string>
   <string name="account_setup_account_type_title">Tipo de cuenta</string>
   <string name="account_setup_account_type_instructions">¿Qué tipo de cuenta es?</string>
+  <string name="account_setup_account_type_nauta_imap_action">Nauta IMAP (recomendado)</string>
+  <string name="account_setup_account_type_nauta_pop3_action">Nauta POP3</string>
   <string name="account_setup_account_type_pop_action">POP3</string>
   <string name="account_setup_account_type_imap_action">IMAP</string>
   <string name="account_setup_account_type_webdav_action">Exchange (WebDAV)</string>
@@ -719,6 +732,7 @@ Por favor, envía los errores detectados, contribuye con nuevas funcionalidades 
   <string name="font_size_large">Grande</string>
   <string name="font_size_larger">Muy Grande</string>
   <string name="miscellaneous_preferences">Varios</string>
+
   <!--APG related-->
   <string name="error_activity_not_found">No existe aplicación para realizar esta acción.</string>
   <string name="error_apg_version_not_supported">No se admite esta versión de APG.</string>
@@ -879,6 +893,7 @@ Por favor, envía los errores detectados, contribuye con nuevas funcionalidades 
   <string name="fetching_attachment_dialog_title_send">Enviando mensaje</string>
   <string name="fetching_attachment_dialog_title_save">Guardando borrador</string>
   <string name="fetching_attachment_dialog_message">Recuperando adjunto…</string>
+
   <!--=== OpenPGP specific ==================================================================-->
   <string name="openpgp_decrypting_verifying">Descifrando/Verificando…</string>
   <string name="openpgp_successful_decryption">Descifrado correctamente</string>
