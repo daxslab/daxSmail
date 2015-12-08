@@ -4,12 +4,12 @@
   <!--This should make it easier for forks to change the branding-->
 
   <!--Used in AndroidManifest.xml-->
-  <string name="app_name">Daxs Mail</string>
-  <string name="beta_app_name">Daxs Mail BETA</string>
-  <string name="shortcuts_title">Cuentas de Daxs Mail</string>
-  <string name="unread_widget_label">Mensaje Daxs Mail no leído</string>
-  <string name="remote_control_label">Control remoto Daxs Mail</string>
-  <string name="remote_control_desc">Permite a esta aplicación controlar las actividades y configuración de Daxs Mail</string>
+  <string name="app_name">daxSmail</string>
+  <string name="beta_app_name">daxSmail BETA</string>
+  <string name="shortcuts_title">Cuentas de daxSmail</string>
+  <string name="unread_widget_label">Mensaje daxSmail no leído</string>
+  <string name="remote_control_label">Control remoto daxSmail</string>
+  <string name="remote_control_desc">Permite a esta aplicación controlar las actividades y configuración de daxSmail</string>
 
   <!--Used in the about dialog-->
   <string name="app_authors">DaxsLab.</string>
@@ -17,12 +17,12 @@
   <string name="app_license">Licenciado con Licencia Apache, Versión 2.0.</string>
 
   <!--Welcome message-->
-  <string name="welcome_message_title">Bienvenido a Daxs Mail</string>
+  <string name="welcome_message_title">Bienvenido a daxSmail</string>
   <string name="accounts_welcome"><![CDATA[
 <p>
-Daxs Mail es un fork del cliente de correo OpenSource para Android K-9 Mail, optimizado para el uso del correo Nauta en las redes cubanas de ETECSA y basado en el estándar Android Mail.
+daxSmail es un fork del cliente de correo OpenSource para Android K-9 Mail, optimizado para el uso del correo Nauta en las redes cubanas de ETECSA y basado en el estándar Android Mail.
 </p><p>
-Daxs Mail implementa estas características:
+daxSmail implementa estas características:
 </p>
 <ul>
   <li>Configuración sencilla del correo Nauta</li>
@@ -42,7 +42,7 @@ Daxs Mail implementa estas características:
   <li>…y muchas más.</li>
 </ul>
 <p>
-Conviene señalar que Daxs Mail no soporta la mayoría de las cuentas de Hotmail y que, como muchos otros clientes de correo, tiene ciertas peculiaridades cuando se comunica con Microsoft Exchange.
+Conviene señalar que daxSmail no soporta la mayoría de las cuentas de Hotmail y que, como muchos otros clientes de correo, tiene ciertas peculiaridades cuando se comunica con Microsoft Exchange.
 </p><p>
 Por favor, envía los errores detectados, contribuye con nuevas funcionalidades y pregunta en
 <a href=\"http://www.github.com/daxslab/daxs-mail\">http://www.github.com/daxslab/daxs-mail</a>.
@@ -54,13 +54,13 @@ Por favor, envía los errores detectados, contribuye con nuevas funcionalidades 
     ]]></string>
 
   <!--Default signature-->
-  <string name="default_signature">-- \nEnviado desde mi android con Daxs Mail.</string>
+  <string name="default_signature">-- \nEnviado desde mi android con daxSmail.</string>
 
   <!--General strings that include the app name-->
-  <string name="account_delete_dlg_instructions_fmt">La cuenta \"<xliff:g id="account">%s</xliff:g>\" será eliminada de Daxs Mail.</string>
-  <string name="account_recreate_dlg_instructions_fmt">Los datos de \"<xliff:g id="account">%s</xliff:g>\" serán eliminados de Daxs Mail, pero se mantendrá su configuración.</string>
-  <string name="account_clear_dlg_instructions_fmt">Todos los mensajes en \"<xliff:g id="account">%s</xliff:g>\" serán eliminados de Daxs Mail, pero la configuración de la cuenta se mantendrá.</string>
-  <string name="insufficient_apg_permissions">Daxs Mail no tiene permiso para acceder totalmente a APG, por favor, instale Daxs Mail otra vez para arreglarlo.</string>
+  <string name="account_delete_dlg_instructions_fmt">La cuenta \"<xliff:g id="account">%s</xliff:g>\" será eliminada de daxSmail.</string>
+  <string name="account_recreate_dlg_instructions_fmt">Los datos de \"<xliff:g id="account">%s</xliff:g>\" serán eliminados de daxSmail, pero se mantendrá su configuración.</string>
+  <string name="account_clear_dlg_instructions_fmt">Todos los mensajes en \"<xliff:g id="account">%s</xliff:g>\" serán eliminados de daxSmail, pero la configuración de la cuenta se mantendrá.</string>
+  <string name="insufficient_apg_permissions">daxSmail no tiene permiso para acceder totalmente a APG, por favor, instale daxSmail otra vez para arreglarlo.</string>
 
   <!--=== App Store-specific strings =======================================================-->
   <string name="import_dialog_error_message">Por favor instale un gestor de archivos para continuar con esta importación.</string>

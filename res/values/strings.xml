@@ -5,14 +5,14 @@
     <!-- This should make it easier for forks to change the branding -->
 
     <!-- Used in AndroidManifest.xml -->
-    <string name="app_name">Daxs Mail</string>
-    <string name="beta_app_name">Daxs Mail BETA</string>
+    <string name="app_name">daxSmail</string>
+    <string name="beta_app_name">daxSmail BETA</string>
 
-    <string name="shortcuts_title">Daxs Mail Accounts</string>
-    <string name="unread_widget_label">Daxs Mail Unread</string>
+    <string name="shortcuts_title">daxSmail Accounts</string>
+    <string name="unread_widget_label">daxSmail Unread</string>
 
-    <string name="remote_control_label">Daxs Mail remote control</string>
-    <string name="remote_control_desc">Allows this application to control Daxs Mail activities and settings.</string>
+    <string name="remote_control_label">daxSmail remote control</string>
+    <string name="remote_control_desc">Allows this application to control daxSmail activities and settings.</string>
 
 
     <!-- Used in the about dialog -->
@@ -22,10 +22,10 @@
 
 
     <!-- Welcome message -->
-    <string name="welcome_message_title">Welcome to Daxs Mail</string>
+    <string name="welcome_message_title">Welcome to daxSmail</string>
     <string name="accounts_welcome"><![CDATA[
 <p>
-Daxs Mail is a fork of the powerful free email client for Android K-9 Mail, optimized for its use with the Nauta email service of the cuban ETECSA networks.
+daxSmail is a fork of the powerful free email client for Android K-9 Mail, optimized for its use with the Nauta email service of the cuban ETECSA networks.
 </p><p>
 Its improved features include:
 </p>
@@ -47,7 +47,7 @@ Its improved features include:
   <li>…and more</li>
 </ul>
 <p>
-Please note that Daxs Mail does not support most free Hotmail accounts and, like many mail clients, has
+Please note that daxSmail does not support most free Hotmail accounts and, like many mail clients, has
 some quirks when talking to Microsoft Exchange.
 </p><p>
 Please submit bug reports, contribute new features and ask questions at
@@ -61,14 +61,14 @@ Please submit bug reports, contribute new features and ask questions at
 
 
     <!-- Default signature -->
-    <string name="default_signature">-- \nSent from my Android device with Daxs Mail.</string>
+    <string name="default_signature">-- \nSent from my Android device with daxSmail.</string>
 
 
     <!-- General strings that include the app name -->
     <string name="account_delete_dlg_instructions_fmt">The account \"<xliff:g id="account">%s</xliff:g>\" will be removed from K-9 Mail.</string>
     <string name="account_recreate_dlg_instructions_fmt">All local data for \"<xliff:g id="account">%s</xliff:g>\" will be removed. Account settings will be retained.</string>
     <string name="account_clear_dlg_instructions_fmt">Local copies of messages in \"<xliff:g id="account">%s</xliff:g>\" will be removed. Account settings will be retained.</string>
-    <string name="insufficient_apg_permissions">Daxs Mail doesn\'t have permission to access APG fully, please reinstall Daxs Mail to fix that.</string>
+    <string name="insufficient_apg_permissions">daxSmail doesn\'t have permission to access APG fully, please reinstall daxSmail to fix that.</string>
 
 
 
@@ -334,7 +334,7 @@ Please submit bug reports, contribute new features and ask questions at
     <string name="global_settings_confirm_action_spam">Spam</string>
     <string name="global_settings_confirm_action_delete_notif">Delete (from notification)</string>
 
-    <string name="global_settings_privacy_hide_useragent">Remove Daxs Mail User-Agent from mail headers</string>
+    <string name="global_settings_privacy_hide_useragent">Remove daxSmail User-Agent from mail headers</string>
     <string name="global_settings_privacy_hide_timezone">Use UTC as time zone in mail headers</string>
     <string name="global_settings_notification_hide_subject_title">Hide subject in notifications</string>
     <string name="global_settings_notification_hide_subject_never">Never</string>
