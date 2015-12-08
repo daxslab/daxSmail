@@ -135,7 +135,11 @@ public class AccountSetupAccountType extends K9Activity implements OnClickListen
 
             mAccount.save(Preferences.getPreferences(this));
 
-            Accounts.listAccounts(this);
+            mAccount.setDescription(mAccount.getEmail());
+            mAccount.save(Preferences.getPreferences(this));
+            K9.setServicesEnabled(this);
+            AccountSetupNames.actionSetNames(this, mAccount);
+
             finish();
 
         }catch (Exception use) {
@@ -186,7 +190,11 @@ public class AccountSetupAccountType extends K9Activity implements OnClickListen
 
             mAccount.save(Preferences.getPreferences(this));
 
-            Accounts.listAccounts(this);
+            mAccount.setDescription(mAccount.getEmail());
+            mAccount.save(Preferences.getPreferences(this));
+            K9.setServicesEnabled(this);
+            AccountSetupNames.actionSetNames(this, mAccount);
+
             finish();
 
         }catch (Exception use) {
