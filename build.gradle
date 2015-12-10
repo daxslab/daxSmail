@@ -56,6 +56,12 @@ android {
   }
   productFlavors {
   }
+  buildTypes {
+    release {
+      minifyEnabled true
+      proguardFile 'proguard.cfg'
+    }
+  }
 }
 
 task testsOnJVM(type :GradleBuild, dependsOn: assemble) {
