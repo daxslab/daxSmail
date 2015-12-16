@@ -342,6 +342,13 @@
             android:entryValues="@array/background_ops_values"
             android:dialogTitle="@string/background_ops_label" />
 
+        <CheckBoxPreference
+            android:persistent="false"
+            android:key="auto_activate_data_connection"
+            android:title="@string/auto_activate_data_connection_title"
+            android:summary="@string/gestures_summary" />
+
+
     </PreferenceScreen>
 
     <PreferenceScreen

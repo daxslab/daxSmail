@@ -46,6 +46,10 @@ public class GlobalSettings {
                 new V(1, new EnumSetting<K9.BACKGROUND_OPS>(
                         K9.BACKGROUND_OPS.class, K9.BACKGROUND_OPS.WHEN_CHECKED_AUTO_SYNC))
             ));
+        s.put("autoActivateDataConnectionEnabled", Settings.versions(
+                new V(1, new BooleanSetting(true)),
+                new V(4, new BooleanSetting(false))
+        ));
         s.put("changeRegisteredNameColor", Settings.versions(
                 new V(1, new BooleanSetting(false))
             ));

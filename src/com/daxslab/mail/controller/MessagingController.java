@@ -95,6 +95,7 @@ import com.daxslab.mail.search.SearchSpecification;
 import com.daxslab.mail.search.SqlQueryBuilder;
 import com.daxslab.mail.service.NotificationActionService;
 
+import com.daxslab.daxsdataconnection.DataConnection;
 
 /**
  * Starts a long running (application) Thread that will run through commands
@@ -936,6 +937,43 @@ public class MessagingController implements Runnable {
         });
     }
 
+    private void waitSomeSeconds(int seconds){
+
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    private void startDataConnection(){
+        DataConnection dataConnection = new DataConnection();
+
+        if (K9.autoActivateDataConnectionEnabled() && !dataConnection.getMobileDataState(mApplication)){
+            dataConnection.setMobileDataState(mApplication, true);
+
+            for(int i = 10; i>0; i++){
+                waitSomeSeconds(1);
+                if(dataConnection.getMobileDataState(mApplication)){
+                    break;
+                }
+            }
+
+            Log.e("MAIL", "data connection status1: " + dataConnection.getMobileDataState(mApplication));
+        }
+    }
+
+    private void stopDataConnection(){
+        DataConnection dataConnection = new DataConnection();
+
+        Log.e("MAIL", "data connection status2: " + dataConnection.getMobileDataState(mApplication));
+        if (K9.autoActivateDataConnectionEnabled() && dataConnection.getMobileDataState(mApplication)){
+            dataConnection.setMobileDataState(mApplication, false);
+            Log.e("MAIL", "data connection status3: " + dataConnection.getMobileDataState(mApplication));
+        }
+    }
+
     /**
      * Start foreground synchronization of the specified folder. This is generally only called
      * by synchronizeMailbox.
@@ -946,6 +984,8 @@ public class MessagingController implements Runnable {
      * @param providedRemoteFolder TODO
      */
     private void synchronizeMailboxSynchronous(final Account account, final String folder, final MessagingListener listener, Folder providedRemoteFolder) {
+        startDataConnection();
+
         Folder remoteFolder = null;
         LocalFolder tLocalFolder = null;
 
@@ -962,7 +1002,7 @@ public class MessagingController implements Runnable {
             for (MessagingListener l : getListeners(listener)) {
                 l.synchronizeMailboxFinished(account, folder, 0, 0);
             }
-
+            stopDataConnection();
             return;
         }
 
@@ -1010,6 +1050,7 @@ public class MessagingController implements Runnable {
                 remoteFolder = remoteStore.getFolder(folder);
 
                 if (! verifyOrCreateRemoteSpecialFolder(account, folder, remoteFolder, listener)) {
+                    stopDataConnection();
                     return;
                 }
 
@@ -1110,6 +1151,7 @@ public class MessagingController implements Runnable {
                 }
 
             } else if (remoteMessageCount < 0) {
+                stopDataConnection();
                 throw new Exception("Message count " + remoteMessageCount + " for folder " + folder);
             }
 
@@ -1201,6 +1243,8 @@ public class MessagingController implements Runnable {
 
             closeFolder(tLocalFolder);
         }
+
+        stopDataConnection();
 
     }
 

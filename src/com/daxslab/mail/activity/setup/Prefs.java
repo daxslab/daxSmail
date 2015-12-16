@@ -87,6 +87,7 @@ public class Prefs extends K9PreferenceActivity {
 
     private static final String PREFERENCE_AUTOFIT_WIDTH = "messageview_autofit_width";
     private static final String PREFERENCE_BACKGROUND_OPS = "background_ops";
+    private static final String PREFERENCE_AUTO_ACTIVATE_DATA_CONNECTION = "auto_activate_data_connection";
     private static final String PREFERENCE_DEBUG_LOGGING = "debug_logging";
     private static final String PREFERENCE_SENSITIVE_LOGGING = "sensitive_logging";
 
@@ -133,6 +134,7 @@ public class Prefs extends K9PreferenceActivity {
     private CheckBoxPreference mShowNext;
     private CheckBoxPreference mAutofitWidth;
     private ListPreference mBackgroundOps;
+    private CheckBoxPreference mAutoActivateDataConnection;
     private CheckBoxPreference mDebugLogging;
     private CheckBoxPreference mSensitiveLogging;
     private CheckBoxPreference mHideUserAgent;
@@ -338,6 +340,8 @@ public class Prefs extends K9PreferenceActivity {
         }
 
         mBackgroundOps = setupListPreference(PREFERENCE_BACKGROUND_OPS, K9.getBackgroundOps().name());
+        mAutoActivateDataConnection = (CheckBoxPreference)findPreference(PREFERENCE_AUTO_ACTIVATE_DATA_CONNECTION);
+        mAutoActivateDataConnection.setChecked(K9.autoActivateDataConnectionEnabled());
 
         mDebugLogging = (CheckBoxPreference)findPreference(PREFERENCE_DEBUG_LOGGING);
         mSensitiveLogging = (CheckBoxPreference)findPreference(PREFERENCE_SENSITIVE_LOGGING);
@@ -487,6 +491,7 @@ public class Prefs extends K9PreferenceActivity {
         K9.setSplitViewMode(SplitViewMode.valueOf(mSplitViewMode.getValue()));
         K9.setAttachmentDefaultPath(mAttachmentPathPreference.getSummary().toString());
         boolean needsRefresh = K9.setBackgroundOps(mBackgroundOps.getValue());
+        K9.setAutoActivateDataConnectionEnabled(mAutoActivateDataConnection.isChecked());
 
         if (!K9.DEBUG && mDebugLogging.isChecked()) {
             Toast.makeText(this, R.string.debug_logging_enabled, Toast.LENGTH_LONG).show();

@@ -246,6 +246,8 @@ public class K9 extends Application {
     private static boolean mMessageViewReturnToList = false;
     private static boolean mMessageViewShowNext = false;
 
+    private static boolean mAutoActivateDataConnectionEnabled = false;
+
     private static boolean mGesturesEnabled = true;
     private static boolean mUseVolumeKeysForNavigation = false;
     private static boolean mUseVolumeKeysForListNavigation = false;
@@ -504,6 +506,7 @@ public class K9 extends Application {
         editor.putBoolean("enableDebugLogging", K9.DEBUG);
         editor.putBoolean("enableSensitiveLogging", K9.DEBUG_SENSITIVE);
         editor.putString("backgroundOperations", K9.backgroundOps.name());
+        editor.putBoolean("autoActivateDataConnectionEnabled", mAutoActivateDataConnectionEnabled);
         editor.putBoolean("animations", mAnimations);
         editor.putBoolean("gesturesEnabled", mGesturesEnabled);
         editor.putBoolean("useVolumeKeysForNavigation", mUseVolumeKeysForNavigation);
@@ -615,17 +618,17 @@ public class K9 extends Application {
                     K9.this.sendBroadcast(intent);
                     if (K9.DEBUG)
                         Log.d(K9.LOG_TAG, "Broadcasted: action=" + action
-                              + " account=" + account.getDescription()
-                              + " folder=" + folder
-                              + " message uid=" + message.getUid()
-                             );
+                                        + " account=" + account.getDescription()
+                                        + " folder=" + folder
+                                        + " message uid=" + message.getUid()
+                        );
 
                 } catch (MessagingException e) {
                     Log.w(K9.LOG_TAG, "Error: action=" + action
-                          + " account=" + account.getDescription()
-                          + " folder=" + folder
-                          + " message uid=" + message.getUid()
-                         );
+                                    + " account=" + account.getDescription()
+                                    + " folder=" + folder
+                                    + " message uid=" + message.getUid()
+                    );
                 }
             }
 
@@ -659,7 +662,7 @@ public class K9 extends Application {
 
             @Override
             public void folderStatusChanged(Account account, String folderName,
-                    int unreadMessageCount) {
+                                            int unreadMessageCount) {
 
                 updateUnreadWidget();
 
@@ -709,6 +712,7 @@ public class K9 extends Application {
             DEBUG = true;
             Log.i(K9.LOG_TAG, "Debugger attached; enabling debug logging.");
         }
+        mAutoActivateDataConnectionEnabled = sprefs.getBoolean("autoActivateDataConnectionEnabled", false);
         DEBUG_SENSITIVE = sprefs.getBoolean("enableSensitiveLogging", false);
         mAnimations = sprefs.getBoolean("animations", true);
         mGesturesEnabled = sprefs.getBoolean("gesturesEnabled", false);
@@ -941,6 +945,14 @@ public class K9 extends Application {
 
     public static boolean setBackgroundOps(String nbackgroundOps) {
         return setBackgroundOps(BACKGROUND_OPS.valueOf(nbackgroundOps));
+    }
+
+    public static boolean autoActivateDataConnectionEnabled() {
+        return mAutoActivateDataConnectionEnabled;
+    }
+
+    public static void setAutoActivateDataConnectionEnabled(boolean autoActivateDataConnection) {
+        mAutoActivateDataConnectionEnabled = autoActivateDataConnection;
     }
 
     public static boolean gesturesEnabled() {
