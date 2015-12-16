@@ -51,7 +51,7 @@ android {
     applicationId 'com.daxslab.mail'
     versionCode 12
     versionName '0.5'
-    minSdkVersion 15
+    minSdkVersion 10
     targetSdkVersion 17
   }
   productFlavors {
