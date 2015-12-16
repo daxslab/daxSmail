@@ -9,7 +9,7 @@
 -->
 
 <changelog>
-    <release version="0.6" versioncode="00021" >
+    <release version="0.6" versioncode="00022" >
         <change>Changed minimal android version support to 2.3.3 (Gingerbread)</change>
         <change>Added option for automatically activate data connection on new messages check. This option requires root access on Android 5.0 or higer. (experimental)</change>
     </release>
