@@ -346,7 +346,7 @@
             android:persistent="false"
             android:key="auto_activate_data_connection"
             android:title="@string/auto_activate_data_connection_title"
-            android:summary="@string/gestures_summary" />
+            android:summary="@string/auto_activate_data_connection_summary" />
 
 
     </PreferenceScreen>
