@@ -9,6 +9,10 @@
 -->
 
 <changelog>
+    <release version="0.6" versioncode="00021" >
+        <change>Mínima versión de android soportada cambiada a 2.3.3 (Gingerbread)</change>
+        <change>Agregada opción para activar la conexión de datos automaticamente al comprobar si hay nuevos mensajes. Esta opción requiere acceso como root en Android 5.0 o superior. (experimental)</change>
+    </release>
     <release version="0.5" versioncode="00012" >
         <change>Agregado logo e información de DaxsLab a la vista de bienvenida</change>
         <change>Arreglado dialogo Acerca de</change>

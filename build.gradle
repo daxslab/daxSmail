@@ -50,8 +50,8 @@ android {
   }
   defaultConfig {
     applicationId 'com.daxslab.mail'
-    versionCode 12
-    versionName '0.5'
+    versionCode 21
+    versionName '0.6'
     minSdkVersion 10
     targetSdkVersion 17
   }
